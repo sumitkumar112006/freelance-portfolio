@@ -133,3 +133,155 @@
 .animate-shimmer-line {
   animation: shimmer-line 2.5s infinite;
 }
+
+/* Smooth Sliding & Micro-Shake Classes */
+.slide-card-hover {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.3s ease,
+              background-color 0.3s ease;
+}
+
+.slide-card-hover:hover {
+  transform: translateY(-4px) translateX(2px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8), 0 0 25px -5px rgba(var(--accent-glow), 0.18);
+}
+
+.hover-slide-right {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.25s ease,
+              border-color 0.25s ease,
+              box-shadow 0.35s ease;
+}
+
+.hover-slide-right:hover {
+  transform: translateX(6px);
+}
+
+/* Slightly shakes trigger */
+@keyframes micro-shake {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  20% { transform: translateX(-2.5px) rotate(-1.5deg); }
+  40% { transform: translateX(2.5px) rotate(1.5deg); }
+  60% { transform: translateX(-1.5px) rotate(-0.8deg); }
+  80% { transform: translateX(1.5px) rotate(0.8deg); }
+}
+
+.hover-micro-shake:hover {
+  animation: micro-shake 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.active-shake:active {
+  animation: micro-shake 0.3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+/* Ambient idle micro-shake for flame and special badges */
+@keyframes ambient-pulse-shake {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  25% { transform: rotate(-2.5deg) scale(1.04); }
+  50% { transform: rotate(2.5deg) scale(1.02); }
+  75% { transform: rotate(-1deg) scale(1.04); }
+}
+
+.animate-ambient-shake {
+  animation: ambient-pulse-shake 3s ease-in-out infinite;
+}
+
+/* Card Entrance: Smooth Sliding, Subtle Motion Blur & Subtle Shaky Micro-Settle */
+@keyframes slideBlurShakeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+    filter: blur(8px);
+  }
+  30% {
+    opacity: 0.9;
+    transform: translateX(-40px) translateY(-1px);
+    filter: blur(4px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-8px) translateY(1px);
+    filter: blur(1px);
+  }
+  80% {
+    transform: translateX(3px) translateY(-0.5px);
+    filter: blur(0px);
+  }
+  92% {
+    transform: translateX(-1px) translateY(0.5px);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+    filter: blur(0px);
+  }
+}
+
+@keyframes slideBlurShakeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+    filter: blur(8px);
+  }
+  30% {
+    opacity: 0.9;
+    transform: translateX(40px) translateY(-1px);
+    filter: blur(4px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(8px) translateY(1px);
+    filter: blur(1px);
+  }
+  80% {
+    transform: translateX(-3px) translateY(-0.5px);
+    filter: blur(0px);
+  }
+  92% {
+    transform: translateX(1px) translateY(0.5px);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+    filter: blur(0px);
+  }
+}
+
+@keyframes slideBlurDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+    filter: blur(6px);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(2px);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+  }
+}
+
+.animate-slide-blur-left {
+  animation: slideBlurShakeLeft 0.85s cubic-bezier(0.16, 1, 0.3, 1) both !important;
+  will-change: transform, opacity, filter;
+}
+
+.animate-slide-blur-right {
+  animation: slideBlurShakeRight 0.85s cubic-bezier(0.16, 1, 0.3, 1) both !important;
+  will-change: transform, opacity, filter;
+}
+
+.animate-slide-blur-down {
+  animation: slideBlurDown 0.75s cubic-bezier(0.16, 1, 0.3, 1) both !important;
+  will-change: transform, opacity, filter;
+}
+
+
+

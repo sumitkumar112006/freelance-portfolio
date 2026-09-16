@@ -1,138 +1,172 @@
 export const projectsData = [
   {
-    id: "krypton-kv",
-    title: "Krypton Edge KV",
-    tagline: "Sub-5ms global distributed key-value storage engine",
-    category: "Distributed Systems",
-    status: "Production",
+    id: "kivi-ai",
+    title: "Kivi AI – Interview Simulator",
+    tagline: "AI-powered mock interview platform with real-time feedback",
+    category: "AI & Full-Stack",
+    status: "Live",
     featured: true,
     year: "2026",
-    stars: "2.4k",
+    stars: "",
     metrics: [
-      { label: "p99 Read Latency", value: "3.8ms", change: "-42%" },
-      { label: "Peak QPS", value: "1.2M req/s", change: "+180%" },
-      { label: "Global Edge Nodes", value: "48 PoPs", change: "Multi-region" },
-      { label: "Zero-Downtime Replication", value: "99.999%", change: "Raft Consensus" }
+      { label: "AI Engine", value: "Gemini AI", change: "Real-time Q&A" },
+      { label: "Interview Modes", value: "Multiple", change: "Role-based" },
+      { label: "Stack", value: "React + Node", change: "Full-Stack" },
+      { label: "Auth", value: "JWT Secure", change: "User Accounts" }
     ],
-    tech: ["Rust", "Wasm", "Cloudflare Workers", "Raft", "TypeScript", "gRPC"],
-    description: "Architected a globally distributed, low-latency key-value engine with automatic peer-to-peer partition tolerance and CRDT conflict resolution. Built for edge-native microservices requiring instantaneous consensus.",
+    tech: ["React", "Node.js", "Gemini AI", "JWT", "MongoDB", "Tailwind CSS"],
+    description: "Kivi AI is an intelligent interview preparation platform that simulates real interview scenarios using Google Gemini AI. Users can select a role, answer dynamic AI-generated questions, and receive instant feedback on their responses — sharpening their interview skills through structured, realistic practice sessions.",
     architecture: {
       diagram: [
-        { stage: "Edge Ingress", desc: "Anycast routing with geo-affinity handshake" },
-        { stage: "Consensus Tier", desc: "Multi-Raft state machine with zero-copy serialization" },
-        { stage: "Storage Engine", desc: "LSM-Tree with memory-mapped bloom filters" },
-        { stage: "Sync Layer", desc: "Delta-state CRDTs over multiplexed QUIC streams" }
+        { stage: "Auth Layer", desc: "JWT-based secure login and user session management" },
+        { stage: "AI Engine", desc: "Gemini AI integration for dynamic question generation and answer evaluation" },
+        { stage: "Interview Flow", desc: "Role-based question sets with real-time response feedback" },
+        { stage: "Result Store", desc: "MongoDB persistence for session history and progress tracking" }
       ],
       highlights: [
-        "Eliminated cold start latency using V8 isolates and custom WASM runtime bindings.",
-        "Implemented custom SIMD-accelerated checksum verification for sub-millisecond block integrity.",
-        "Engineered automatic failover routing across 48 worldwide edge points-of-presence."
+        "Integrated Google Gemini AI for dynamic, role-specific interview question generation.",
+        "Built secure authentication with JWT and protected user interview sessions.",
+        "Designed an adaptive feedback system that evaluates answers in real-time."
       ]
     },
-    liveUrl: "https://krypton-kv.dev",
-    githubUrl: "https://github.com/sumit/krypton-kv",
-    accent: "from-cyan-500/20 to-blue-500/10"
+    liveUrl: "https://ai-interviewer-silk.vercel.app/login",
+    githubUrl: "https://github.com/sumitkumar112006/ai-interviewer",
+    accent: "from-violet-500/20 to-purple-500/10"
   },
   {
-    id: "aura-canvas",
-    title: "Aura Spatial Canvas",
-    tagline: "60 FPS WebGL infinite collaboration whiteboard engine",
-    category: "WebGL & 3D",
-    status: "Production",
+    id: "beauty-parlour",
+    title: "Lady Boss – Beauty Parlour",
+    tagline: "Elegant bridal studio website for Tanmatra Makeup Artist",
+    category: "Web Design",
+    status: "Live",
     featured: true,
     year: "2025",
-    stars: "4.1k",
+    stars: "",
     metrics: [
-      { label: "Rendering Performance", value: "60 FPS", change: "100k+ elements" },
-      { label: "WebSocket Sync Latency", value: "12ms", change: "Multiplayer" },
-      { label: "Memory Footprint", value: "34 MB", change: "-65% vs DOM" },
-      { label: "Spatial Tree Queries", value: "< 0.4ms", change: "Quadtree R-Tree" }
+      { label: "Services Listed", value: "6 Packages", change: "Bridal & Party" },
+      { label: "Sections", value: "Gallery & Reviews", change: "Full Landing Page" },
+      { label: "Booking CTA", value: "Direct Contact", change: "Appointment Flow" },
+      { label: "Design", value: "Elegant UI", change: "Mobile Responsive" }
     ],
-    tech: ["TypeScript", "WebGL", "Three.js", "WebSockets", "Web Workers", "Tailwind CSS"],
-    description: "Engineered a high-performance spatial infinite whiteboard that bypasses the DOM entirely, rendering complex vectors, infinite zoom planes, and multi-cursor real-time physics on a custom WebGL pipeline.",
+    tech: ["HTML", "CSS", "JavaScript", "GitHub Pages"],
+    description: "A premium beauty parlour landing page designed for 'Lady Boss by Tanmatra Makeup Artist', a bridal studio based in Meerut, UP. Features a royal aesthetic with sections for services, portfolio gallery, client reviews, and a direct booking flow — crafted to attract and convert bridal clients.",
     architecture: {
       diagram: [
-        { stage: "Client Viewport", desc: "Orthographic spatial camera with quadtree culling" },
-        { stage: "Render Pipeline", desc: "Instanced mesh batching with custom fragment shaders" },
-        { stage: "Worker Thread", desc: "Off-thread bezier curve tessellation and hit-testing" },
-        { stage: "Sync Protocol", desc: "Binary messagepack diffs over persistent WebSockets" }
+        { stage: "Hero Section", desc: "Bold headline with Book Now and View Portfolio CTAs" },
+        { stage: "Services Grid", desc: "Cards showcasing Bridal, Pre-Bridal, Hair, Party, Facials, and Nail packages" },
+        { stage: "Gallery", desc: "Royal Transformations portfolio with bride story images" },
+        { stage: "Contact & Booking", desc: "Direct contact form with appointment booking flow" }
       ],
       highlights: [
-        "GPU-instanced vector rendering handling over 100,000 interactive nodes at smooth 60fps.",
-        "Spatial quadtree indexing allowing instant viewport bounding-box queries under 0.5ms.",
-        "Conflict-free multiplayer cursor interpolation with predictive physics smoothing."
+        "Designed a premium, elegant royal UI to match a high-end bridal studio brand identity.",
+        "Implemented a smooth multi-section scroll layout with responsive design across all devices.",
+        "Built a clear service showcase with structured packages to improve client conversion."
       ]
     },
-    liveUrl: "https://aura-canvas.io",
-    githubUrl: "https://github.com/sumit/aura-canvas",
-    accent: "from-purple-500/20 to-indigo-500/10"
+    liveUrl: "https://sumitkumar112006.github.io/Beauty_Parlour/",
+    githubUrl: "https://github.com/sumitkumar112006/Beauty_Parlour",
+    accent: "from-pink-500/20 to-rose-500/10"
   },
   {
-    id: "apex-telemetry",
-    title: "Apex Micro-Telemetry",
-    tagline: "High-cardinality observability & anomaly detection dashboard",
-    category: "Design Engineering",
-    status: "Production",
+    id: "agency-ui",
+    title: "Agency UI – Creative Agency Site",
+    tagline: "Modern creative agency landing page with bold design",
+    category: "Web Design",
+    status: "Live",
     featured: true,
     year: "2025",
-    stars: "1.8k",
+    stars: "",
     metrics: [
-      { label: "Log Ingestion Rate", value: "500k/sec", change: "Real-time" },
-      { label: "Query Execution", value: "18ms", change: "ClickHouse" },
-      { label: "Interface Responsiveness", value: "100/100", change: "Lighthouse" },
-      { label: "Anomaly Detection", value: "99.4%", change: "Adaptive Threshold" }
+      { label: "Design System", value: "Custom CSS", change: "Brand Consistent" },
+      { label: "Layout", value: "Responsive", change: "All Viewports" },
+      { label: "Sections", value: "Multi-section", change: "Full Landing Page" },
+      { label: "Deployment", value: "GitHub Pages", change: "Static Hosting" }
     ],
-    tech: ["React", "ClickHouse", "Go", "Tailwind CSS", "D3.js", "Web Audio API"],
-    description: "A dark-mode first, keyboard-navigable time-series monitoring UI engineered for DevOps teams. Features smooth interactive brush charts, real-time alert heatmaps, and zero-latency filtering across billions of log lines.",
+    tech: ["HTML", "CSS", "JavaScript", "Vite", "GitHub Pages"],
+    description: "A bold and modern creative agency UI built from scratch with a strong visual identity. Features a polished landing page layout with clear service sections, smooth navigation, and a professional structure suited for digital agencies and creative studios.",
     architecture: {
       diagram: [
-        { stage: "Ingestion Buffer", desc: "High-throughput Kafka streaming pipeline" },
-        { stage: "Columnar Storage", desc: "ClickHouse partitions with materialized aggregations" },
-        { stage: "Frontend Cache", desc: "Virtualized windowing with Web Worker downsampling" },
-        { stage: "UI Render Layer", desc: "Canvas-accelerated time series charts with tactile audio alerts" }
+        { stage: "Navigation", desc: "Sticky navbar with smooth section anchors and CTA" },
+        { stage: "Hero Block", desc: "High-impact headline with brand messaging and primary actions" },
+        { stage: "Services", desc: "Organized service cards with icon-led descriptions" },
+        { stage: "Contact Footer", desc: "Professional footer with contact and social links" }
       ],
       highlights: [
-        "Dynamic canvas-based time-series chart rendering 1,000,000 data points with smooth pinch-to-zoom.",
-        "Comprehensive keyboard shortcut system (Cmd+K, J/K jump navigation, / query focus).",
-        "Integrated Web Audio synth triggers for audible threshold breach warnings."
+        "Built a pixel-perfect agency UI with bold typography and strong visual hierarchy.",
+        "Implemented a fully responsive layout optimized for desktop and mobile screens.",
+        "Deployed as a static site on GitHub Pages with zero-dependency performance."
       ]
     },
-    liveUrl: "https://apex-metrics.dev",
-    githubUrl: "https://github.com/sumit/apex-telemetry",
+    liveUrl: "https://sumitkumar112006.github.io/Agency_Project/",
+    githubUrl: "https://github.com/sumitkumar112006/Agency_Project",
+    accent: "from-blue-500/20 to-cyan-500/10"
+  },
+  {
+    id: "portfolio-v1",
+    title: "Portfolio v1 – Personal Site",
+    tagline: "First-generation personal developer portfolio",
+    category: "Portfolio",
+    status: "Live",
+    featured: false,
+    year: "2024",
+    stars: "",
+    metrics: [
+      { label: "Sections", value: "Skills & Projects", change: "Full Portfolio" },
+      { label: "Font Stack", value: "Outfit + Great Vibes", change: "Premium Typography" },
+      { label: "Stack", value: "React + Vite", change: "Modern Build" },
+      { label: "Hosting", value: "Vercel", change: "Auto-Deploy" }
+    ],
+    tech: ["React", "Vite", "Tailwind CSS", "Vercel"],
+    description: "My first personal developer portfolio built with React and Vite, featuring a clean dark design with premium typography using Outfit and Great Vibes fonts. Showcases my skills, projects, and journey as a Full-Stack Developer with smooth navigation and a professional presentation.",
+    architecture: {
+      diagram: [
+        { stage: "Hero", desc: "Personal introduction with role title and key highlights" },
+        { stage: "Skills", desc: "Tech stack display with categorized skill badges" },
+        { stage: "Projects", desc: "Project cards linking to live demos and repositories" },
+        { stage: "Contact", desc: "Contact section for client and collaboration inquiries" }
+      ],
+      highlights: [
+        "Built a fully responsive personal portfolio using React and Vite with zero-config deployment on Vercel.",
+        "Applied premium Google Font pairing (Outfit + Great Vibes) for a distinctive typographic identity.",
+        "Structured clear project and skill showcases to communicate technical capabilities to recruiters and clients."
+      ]
+    },
+    liveUrl: "https://myportfolio-lovat-phi-37.vercel.app/",
+    githubUrl: "https://github.com/sumitkumar112006/myportfolio",
     accent: "from-emerald-500/20 to-teal-500/10"
   },
   {
-    id: "synthetix-ui",
-    title: "Synthetix Design System",
-    tagline: "Accessible, headless craft UI library with dynamic physics",
-    category: "Design Engineering",
-    status: "Open Source",
+    id: "portfolio-v2",
+    title: "Portfolio v2 – Upgraded Developer Site",
+    tagline: "Second-generation portfolio with refined design and content",
+    category: "Portfolio",
+    status: "Live",
     featured: false,
-    year: "2024",
-    stars: "3.5k",
+    year: "2025",
+    stars: "",
     metrics: [
-      { label: "Components", value: "42 Primitives", change: "WCAG AAA" },
-      { label: "Bundle Size", value: "< 4.2 kB", change: "Tree-shakable" },
-      { label: "Weekly Downloads", value: "85k+", change: "NPM registry" },
-      { label: "Test Coverage", value: "99.2%", change: "Unit & Visual" }
+      { label: "Design", value: "Upgraded UI", change: "v2 Refinement" },
+      { label: "Content", value: "Expanded", change: "More Projects" },
+      { label: "Stack", value: "React + Vite", change: "Modern Build" },
+      { label: "Hosting", value: "Vercel", change: "Auto-Deploy" }
     ],
-    tech: ["TypeScript", "Radix UI", "CSS Modules", "Framer Motion", "Storybook"],
-    description: "An opinionated design system crafted for developer tools and high-velocity SaaS products. Features sub-pixel borders, spring-physics motion curves, sound feedback integrations, and full keyboard accessibility.",
+    tech: ["React", "Vite", "CSS", "Vercel"],
+    description: "An upgraded version of my personal portfolio with refined design, improved content structure, and a more polished presentation. Reflects growth in design taste and development skills since the first version, with expanded project showcases and a more professional visual identity.",
     architecture: {
       diagram: [
-        { stage: "Token Engine", desc: "Three-tier semantic token architecture with CSS variables" },
-        { stage: "Component Core", desc: "Headless primitives with ARIA 1.2 compliance" },
-        { stage: "Motion Driver", desc: "Spring-physics layout animations with reduced-motion support" },
-        { stage: "Telemetry Hooks", desc: "Interaction analytics and micro-sound synthesis triggers" }
+        { stage: "Hero", desc: "Polished introduction with updated personal branding" },
+        { stage: "Projects", desc: "Expanded project showcase with detailed descriptions" },
+        { stage: "Skills", desc: "Updated tech stack reflecting current capabilities" },
+        { stage: "Contact", desc: "Professional contact and social media links" }
       ],
       highlights: [
-        "Zero-runtime CSS variables with automated contrast ratio verification.",
-        "Built-in tactile micro-interaction sounds via lightweight audio hooks.",
-        "Sub-pixel glassmorphism components with graceful fallback for low-power hardware."
+        "Refined the visual design system with improved spacing, typography, and color usage.",
+        "Expanded project showcase to reflect growth and new full-stack and AI projects.",
+        "Deployed on Vercel with continuous deployment linked to GitHub repository."
       ]
     },
-    liveUrl: "https://synthetix-ui.org",
-    githubUrl: "https://github.com/sumit/synthetix-ui",
+    liveUrl: "https://ss-portfolio-nu.vercel.app/",
+    githubUrl: "https://github.com/sumitkumar112006/ss-portfolio",
     accent: "from-amber-500/20 to-orange-500/10"
   }
 ];
