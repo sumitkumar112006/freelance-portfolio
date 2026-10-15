@@ -1,5 +1,54 @@
 export const projectsData = [
   {
+    id: "web-automation",
+    title: "Web Automation – Agentic Browser Platform",
+    tagline: "Autonomous browser automation engine with visual DAG workflows, Stagehand v4, & Trigger.dev",
+    category: "AI & Full-Stack",
+    status: "Live",
+    featured: true,
+    year: "2026",
+    stars: "",
+    metrics: [
+      { label: "AI Engine", value: "Stagehand v4", change: "Browserbase SDK" },
+      { label: "Workflow Studio", value: "React Flow", change: "Multiplayer Canvas" },
+      { label: "Task Engine", value: "Trigger.dev", change: "Toposort DAGs" },
+      { label: "Database & Auth", value: "Neon + Clerk", change: "Drizzle ORM" }
+    ],
+    tech: [
+      "Next.js",
+      "TypeScript",
+      "Stagehand v4",
+      "Browserbase",
+      "Trigger.dev",
+      "React Flow",
+      "Liveblocks",
+      "Neon Postgres",
+      "Drizzle ORM",
+      "Clerk Auth",
+      "Tailwind CSS",
+      "Sentry"
+    ],
+    description: "An enterprise-grade agentic browser automation platform that transforms natural language and visual node graphs into resilient, self-healing browser execution pipelines. Users can visually construct automation workflows using an interactive canvas, collaborate in real time with Liveblocks, and orchestrate autonomous AI agents powered by Stagehand v4 and Browserbase to navigate, interact with, and extract data from complex modern web applications.",
+    architecture: {
+      diagram: [
+        { stage: "Auth & Multi-Tenancy", desc: "Clerk-authenticated user sessions with team organization workspaces and protected route middleware" },
+        { stage: "Visual Flow Studio", desc: "Interactive DAG canvas built with React Flow (@xyflow/react) and real-time Liveblocks collaboration" },
+        { stage: "Task Orchestrator", desc: "Trigger.dev background job runner executing topologically-sorted node pipelines with automatic retries" },
+        { stage: "Stagehand Browser Engine", desc: "Browserbase cloud browser integration for AI-driven act, observe, and structured DOM data extraction" },
+        { stage: "Persistence & Telemetry", desc: "Neon serverless PostgreSQL with Drizzle ORM schemas and Sentry edge/server error observability" }
+      ],
+      highlights: [
+        "Architected an interactive drag-and-drop workflow canvas with custom trigger and action nodes (Open URL, Act, Observe, Extract, AI Agent, Send Email).",
+        "Integrated Stagehand v4 with Browserbase cloud browsers to enable AI-powered natural language browser navigation and self-healing action execution.",
+        "Built a robust background execution pipeline using Trigger.dev and toposort DAG graph resolution for cycle detection and fault-tolerant execution.",
+        "Implemented real-time multiplayer collaboration with Liveblocks alongside multi-tenant Clerk auth, Neon serverless PostgreSQL, and Drizzle ORM."
+      ]
+    },
+    liveUrl: "https://web-automation-zxvp.onrender.com/",
+    githubUrl: "https://github.com/sumitkumar112006/Web-automation",
+    accent: "from-cyan-500/20 to-blue-500/10"
+  },
+  {
     id: "kivi-ai",
     title: "Kivi AI – Interview Simulator",
     tagline: "AI-powered mock interview platform with real-time feedback",

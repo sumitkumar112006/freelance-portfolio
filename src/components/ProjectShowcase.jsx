@@ -16,7 +16,7 @@ import { sounds } from '../audio/soundEffects';
 export default function ProjectShowcase({ onSelectProject }) {
   const [filter, setFilter] = useState('All');
 
-  const categories = ['All', 'Distributed Systems', 'WebGL & 3D', 'Design Engineering'];
+  const categories = ['All', ...Array.from(new Set(projectsData.map(p => p.category)))];
 
   const filteredProjects = filter === 'All' 
     ? projectsData 

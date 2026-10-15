@@ -1,7 +1,15 @@
 export const changelogData = [
   {
-    version: "v4.2.0",
+    version: "v4.5.0",
     date: "Current Focus",
+    tag: "Agentic AI",
+    title: "Web Automation & Autonomous Browser Agents",
+    description: "Engineered an agentic browser automation platform integrating Stagehand v4, Browserbase cloud browsers, React Flow visual DAG builder, and Trigger.dev background orchestration.",
+    hash: "auto-flow"
+  },
+  {
+    version: "v4.2.0",
+    date: "AI Engineering",
     tag: "AI & ML",
     title: "Exploring Full-Stack + AI/ML Intersections",
     description: "Architecting intelligent full-stack applications with dynamic AI integrations, vector embeddings, and real-time streaming interfaces.",

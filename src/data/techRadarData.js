@@ -16,6 +16,7 @@ export const techRadarData = {
       id: "ai-systems",
       name: "AI & Intelligent Tech",
       skills: [
+        { name: "Browser Automation & Agents", level: 92, experience: "Stagehand & Trigger.dev", highlight: "AI-driven act/extract/observe, DAG visual execution, Browserbase cloud sessions" },
         { name: "AI / LLM Integrations", level: 88, experience: "Applied AI", highlight: "OpenAI/Anthropic/Gemini APIs, function calling, prompt pipelines" },
         { name: "Python for AI/ML", level: 82, experience: "ML Tooling", highlight: "Data preprocessing, scripting, model inference, embeddings" },
         { name: "Intelligent Data Flows", level: 86, experience: "Architecture", highlight: "Augmenting web apps with smart contextual assistants and automation" },

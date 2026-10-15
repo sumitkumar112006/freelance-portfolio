@@ -229,7 +229,7 @@ export default function BentoGrid({ onShowToast, accentColor }) {
                 Active Engineering Focus
               </div>
               <p className="text-xs font-mono text-slate-200">
-                Building Zero-Copy WebAssembly SIMD pipeline for edge KV consensus.
+                Architecting agentic browser automation workflows with Stagehand v4, React Flow & Trigger.dev DAGs.
               </p>
             </div>
 
